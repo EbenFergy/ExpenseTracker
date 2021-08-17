@@ -1,0 +1,22 @@
+.calender {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 5vw;
+  border-radius: 1rem;
+  padding: 0.5rem 2.5rem;
+  color: #ffff;
+  /* border: 2px solid black; */
+  background-color: rgb(44, 43, 42);
+}
+
+.month {
+  font-weight: 500;
+}
+
+.day {
+  font-size: 1.5rem;
+  font-weight: 500;
+}

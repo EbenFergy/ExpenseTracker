@@ -1,0 +1,50 @@
+
+
+.border {
+  border: 2px solid;
+}
+
+.expense-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+  width: clamp(280px, 65vw, 1000px);
+  height: 20vh;
+  padding: 0 clamp(2rem, 5vw, 5rem);
+  box-shadow: 2px 2px 6px rgb(189, 189, 189);
+  margin-top: 2rem;
+}
+
+.expense-item__description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40vw;
+  margin: 0;
+
+}
+
+.expense-item__title{
+  margin: 0;
+  padding: 0;
+}
+
+.expense-item__description h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.expense-item__price {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  background-color: orange;
+  color: #ffff;
+  /* border: 1px solid black; */
+  width: 15vw;
+  text-align: center;
+}
+
