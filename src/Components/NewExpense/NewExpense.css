@@ -1,0 +1,9 @@
+.new-expense__cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(300px, 70vw, 1200px);
+    margin-bottom: 5vh;
+    padding: 10vh 5vw;
+    background-color: rgb(255, 175, 28);
+}

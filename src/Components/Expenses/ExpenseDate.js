@@ -1,4 +1,5 @@
-import './ExpenseDate.css'
+import React from "react";
+import "./ExpenseDate.css";
 
 const ExpenseDate = (props) => {
   const month = props.date.toLocaleString("en-us", { month: "short" });
@@ -6,9 +7,9 @@ const ExpenseDate = (props) => {
   const year = props.date.getFullYear();
   return (
     <div className="calender">
-      <div className='month'>{month} </div>
-      <div className='day'>{day}</div>
-      <div className='year'>{year}</div>
+      <div className="month">{month} </div>
+      <div className="day">{day}</div>
+      <div className="year">{year}</div>
     </div>
   );
 };
