@@ -1,11 +1,21 @@
 import React from "react";
 import ExpenseItem from "./ExpenseItem";
 import "./Expenses.css";
+import Cards from '../UI/Cards'
+import ExpenseFilter from '../Filter/ExpenseFilter';
 
 const Expenses = (props) => {
   const expensesObj = props.expensesList;
+  const expenseFilterSelect =(selection)=>{
+    console.log(selection);
+  }
+
+
   return (
     <div className="expenses">
+      <Cards>
+        <ExpenseFilter selection={expenseFilterSelect}/>
+      </Cards>
       <ExpenseItem
         title={expensesObj[0].title}
         amount={expensesObj[0].amount}
