@@ -3,10 +3,14 @@ import "./NewExpense.css";
 import NewExpenseForm from "./NewExpenseForm";
 import Cards from '../UI/Cards'
 
-const NewExpense = () => {
+const NewExpense = (props) => {
+
+    const onSubmitHandler =(formResponse)=>{
+        props.newExpense(formResponse);
+    }
   return (
     <Cards className='new-expense__cont'>
-      <NewExpenseForm/>
+      <NewExpenseForm onSubmitHandler={onSubmitHandler}/>
     </Cards>
   );
 };

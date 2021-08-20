@@ -36,14 +36,15 @@
 }
 
 .expense-item__price {
-  font-size: 2rem;
+  text-align: center;
+  font-size: 1rem;
   font-weight: 700;
-  padding: 0.5rem 2rem;
+  padding: 1rem ;
   border-radius: 1rem;
   background-color: orange;
   color: #ffff;
   /* border: 1px solid black; */
-  width: 15vw;
+  min-width: 100px;
   text-align: center;
 }
 

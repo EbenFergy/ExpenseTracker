@@ -36,10 +36,14 @@ function App() {
       date: new Date(2021, 4, 2),
     },
   ];
+
+  const newExpense=(formResponse)=>{
+    console.log('app.js', formResponse);
+  }
   return (
     <div className="App">
       <h1>Expense Tracker</h1>
-      <NewExpense/>
+      <NewExpense newExpense={newExpense}/>
       <Expenses expensesList={expenses} />
     </div>
   );
