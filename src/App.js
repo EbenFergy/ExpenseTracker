@@ -39,6 +39,8 @@ function App() {
 
   const newExpense=(formResponse)=>{
     console.log('app.js', formResponse);
+    
+
   }
   return (
     <div className="App">
