@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import Expenses from "./Components/Expenses/Expenses";
-import NewExpense from './Components/NewExpense/NewExpense';
+import NewExpense from "./Components/NewExpense/NewExpense";
 
 const DUMMY_LIST = [
   {
@@ -20,7 +20,7 @@ const DUMMY_LIST = [
     id: "e3",
     title: "Car Insurance",
     amount: 294.67,
-    date: new Date(2021, 2, 28),
+    date: new Date(2022, 2, 28),
   },
   {
     id: "e4",
@@ -32,23 +32,23 @@ const DUMMY_LIST = [
     id: "e5",
     title: "Samsung Phone",
     amount: 980,
-    date: new Date(2021, 4, 2),
+    date: new Date(2019, 4, 2),
   },
 ];
-const App=()=> {
-  const [expenses, setExpenses] = useState([]);
-  const newExpense=(formResponse)=>{
-    setExpenses((prevExpenses)=>{
-      return [formResponse, ...prevExpenses]
-    })
-  }
+const App = () => {
+  const [expenses, setExpenses] = useState(DUMMY_LIST);
+  const newExpense = (formResponse) => {
+    setExpenses((prevExpenses) => {
+      return [formResponse, ...prevExpenses];
+    });
+  };
   return (
     <div className="App">
       <h1>Expense Tracker</h1>
-      <NewExpense newExpense={newExpense}/>
+      <NewExpense newExpense={newExpense} />
       <Expenses expensesList={expenses} />
     </div>
   );
-}
+};
 
 export default App;
