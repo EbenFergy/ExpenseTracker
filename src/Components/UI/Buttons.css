@@ -1,0 +1,13 @@
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 150px;
+  margin: 0;
+  background-color: rgb(126, 82, 0);
+  color: white;
+  
+}
