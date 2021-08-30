@@ -5,7 +5,7 @@ import "./Expenses.css";
 import ExpenseFilter from "../Filter/ExpenseFilter";
 
 const Expenses = (props) => {
-  const [filteredYear, setFilteredYear] = useState('All');
+  const [filteredYear, setFilteredYear] = useState("All");
 
   const expensesObj = props.expensesList;
 
@@ -16,7 +16,6 @@ const Expenses = (props) => {
   const capturedFilterYear = expensesObj.filter((items) => {
     return items.date.getFullYear().toString() === filteredYear;
   });
-  console.log(filteredYear)
 
   return (
     <div className="expenses">
@@ -24,11 +23,13 @@ const Expenses = (props) => {
         filteredYear={filteredYear}
         selection={expenseFilterSelect}
       />
-      
+
       {filteredYear === "All"
         ? expensesObj.map((expenses) => (
             <ExpenseItem key={expenses.id} {...expenses} />
           ))
+        : capturedFilterYear.length === 0
+        ? "No item found for that year"
         : capturedFilterYear.map((expenses) => (
             <ExpenseItem key={expenses.id} {...expenses} />
           ))}

@@ -18,6 +18,7 @@ const NewExpenseForm = (props) => {
       date: new Date(enteredDate),
       id: Math.random().toString(),
     };
+
     props.onSubmitHandler(newFormData);
     setEnteredInput("");
     setEnteredAmount("");
@@ -25,7 +26,7 @@ const NewExpenseForm = (props) => {
   };
 
   return (
-    <form action="" className="" onSubmit={submitHandler}>
+    <form onSubmit={submitHandler}>
       <div className="new-expense-form__cont">
         <div className="title_cont">
           <label>Title</label>
