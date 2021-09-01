@@ -7,14 +7,14 @@
   flex-direction: column;
   justify-content: center;
   height: 10rem;
-  background-color: red;
+
   width: 5%;
 }
 
 .chartBarInner {
   display: flex;
   justify-content: center;
-  background-color: rgb(71, 166, 255);
+  background-color: rgba(71, 166, 255, 0.24);
   height: 100%;
   align-items: flex-end;
 }
@@ -22,4 +22,5 @@
 .chartBarInner__heightFill {
   width: 100%;
   background-color: tomato;
+  transition: height 1s;
 }
