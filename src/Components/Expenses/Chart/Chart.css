@@ -1,0 +1,8 @@
+.chartCont {
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50vw;
+  background-color: yellow;
+}

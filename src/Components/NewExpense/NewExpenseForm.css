@@ -52,4 +52,5 @@ form {
   margin: 0;
   background-color: rgb(126, 82, 0);
   color: white;
+  cursor: pointer;
 }

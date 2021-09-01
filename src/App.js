@@ -34,6 +34,36 @@ const DUMMY_LIST = [
     amount: 980,
     date: new Date(2019, 4, 2),
   },
+  {
+    id: "e6",
+    title: "Nokia",
+    amount: 250,
+    date: new Date(2020, 6, 2),
+  },
+  {
+    id: "e7",
+    title: "Iphone",
+    amount: 2000,
+    date: new Date(2019, 2, 2),
+  },
+  {
+    id: "e8",
+    title: "Blackberry",
+    amount: 600,
+    date: new Date(2022, 5, 2),
+  },
+  {
+    id: "e9",
+    title: "Orange",
+    amount: 3200,
+    date: new Date(2022, 10, 2),
+  },
+  {
+    id: "e10",
+    title: "Blackberry",
+    amount: 800,
+    date: new Date(2019, 11, 2),
+  },
 ];
 const App = () => {
   const [expenses, setExpenses] = useState(DUMMY_LIST);
