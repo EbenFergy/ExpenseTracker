@@ -1,7 +1,6 @@
 import React from "react";
 import "./ChartBars.css";
 import ChartBarDisplay from "./ChartBarDisplay";
-import Cards from "../../UI/Cards";
 
 const ChartBars = ({ yearlyMaxValue, chartBarsData }) => {
   console.log(
